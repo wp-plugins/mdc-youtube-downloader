@@ -1,4 +1,4 @@
-=== MDC Theme Switcher ===
+=== MDC YouTube Downloader ===
 Contributors: mukto90
 Donate link: http://mukto.medhabi.com/
 Tags: theme, preview, change, activate, front-end, switch, theme switch, theme switcher, theme change
