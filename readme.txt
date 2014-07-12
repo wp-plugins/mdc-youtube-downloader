@@ -1,0 +1,29 @@
+=== MDC Theme Switcher ===
+Contributors: mukto90
+Donate link: http://mukto.medhabi.com/
+Tags: theme, preview, change, activate, front-end, switch, theme switch, theme switcher, theme change
+Requires at least: 3.0.1
+Tested up to: 3.9.1
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+MDC YouTube Downloader allows visitors to download YouTube videos directly from your WordPress site.
+
+== Description ==
+
+MDC YouTube Downloader allows visitors to download YouTube videos directly from your WordPress site.
+
+It enables a shortcode `[mdc_youtube_downloader]`, which can be added anywhere of the WordPress. In a post, page or widget. Even in template files!
+
+== Installation ==
+
+1. Upload the `mdc-youtube-downloader` folder and its contents to your `wp-contents/plugins` directory.
+2. Activate in the `Plugins` menu.
+3. Configure from WordPress admin area.
+4. Add shortcode `[mdc_youtube_downloader]` in your post, page, widget on in a template file; if you wish!
+
+== Screenshots ==
+
+1. Configure page
+2. Download page with different video formats
