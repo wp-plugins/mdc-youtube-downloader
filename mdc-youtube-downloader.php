@@ -6,16 +6,31 @@
  * Author: Nazmul Ahsan
  * Version: 1.0.0
  * Author URI: http://mukto.medhabi.com
+ * Stable tag: 1.0.0
  * License: GPL2+
  * Text Domain: MedhabiDotCom
  */
+function mdc_add_stylesheet() {
+	if(!get_option('mdc_custom_css')){
+		wp_enqueue_style( 'mdc_youtube_downloader_style', plugins_url('css/style.css', __FILE__) );
+	}
+	else{
+		echo "<style>";
+		echo get_option('mdc_custom_css');
+		echo "</style>";
+	}
+}
+add_action( 'wp_enqueue_scripts', 'mdc_add_stylesheet' );
+
 include "mdc-option-page.php";
+
 function mdc_youtube_downloader(){?>
 <form class="form-download" method="post" id="download" action="">
 	<input required type="text" name="videoid" id="videoid" size="40" placeholder="Video ID or URL" />
 	<input class="btn btn-primary" type="submit" name="type" id="type" value="Download" />
 </form>
 <br />
+<div class="mdc_video_div">
 	<?php
 	if($_REQUEST['videoid']){
 	if(strlen($_REQUEST['videoid']) > 11){
@@ -28,7 +43,7 @@ function mdc_youtube_downloader(){?>
 	$found_id = $_REQUEST['videoid'];
 	}
 	
-include_once('includes/curl.php');
+include_once('curl.php');
 
 if(isset($_REQUEST['videoid'])) {
 	$my_id = $found_id;
@@ -75,7 +90,7 @@ if(get_option('mdc_show_thumbnail') == 1){
 	else{
 		$width = "auto";
 	}
-	echo '<p><img src="'. $thumbnail_url .'" border="0" hspace="2" vspace="2" height="'.$height.'" width="'.$width.'" class="mdc_video_thumb"></p>';
+	echo '<div class="mdc_floatleft"><img src="'. $thumbnail_url .'" border="0" hspace="2" vspace="2" height="'.$height.'" width="'.$width.'" class="mdc_video_thumb"></div>';
 }
 $my_title = $title;
 
@@ -120,7 +135,7 @@ if ($debug) {
 	echo 'Note that when 8 bit IP addresses are used, the download links may fail.</p>';
 }
 if ($my_type == 'Download') {
-	echo '<ul class="mdc_videos_list">';
+	echo '<div class="mdc_floatright"><ul class="mdc_videos_list">';
 
 	/* now that we have the array, print the options */
 	for ($i = 0; $i < count($avail_formats); $i++) {
@@ -132,7 +147,7 @@ if ($my_type == 'Download') {
 			<?php echo ucfirst($format); if(get_option('mdc_show_quality')){?> (Quality: <?php echo ucfirst($avail_formats[$i]['quality']);?>) <?php }?> - <a href="<?php echo $avail_formats[$i]['url']; ?>" class="mime"><?php if(get_option('mdc_download_text')) {echo get_option('mdc_download_text');} else{ echo "Download";}?></a>
 		</li>
 	<?php }
-	echo '</ul>';
+	echo '</ul></div>';
 ?>
 
 <!-- @TODO: Prepend the base URI -->
@@ -196,5 +211,6 @@ if(isset($redirect_url)) {
 } // end of else for type not being Download
 }
 }
+echo "</div>";
 add_shortcode('mdc_youtube_downloader', 'mdc_youtube_downloader');
 ?>

@@ -47,17 +47,15 @@ function mdc_youtube_downloader_options(){
 					<td>
 						<textarea type="text" id="mdc_custom_css" name="mdc_custom_css" style="height: 200px; width: 340px;"><?php if(get_option('mdc_custom_css')){ echo get_option('mdc_custom_css');} else{?>
 
-.form-download{
-
+.mdc_floatleft {
+	float: left;
+	overflow: hidden;
 }
-.mdc_video_thumb{
-
-}
-.mdc_videos_list{
-
+.mdc_floatright {
+	overflow: hidden;
 }
 .mdc_videos_list li{
-
+	list-style: square
 }
 						<?php }?></textarea>
 					</td>
