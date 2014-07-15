@@ -1,15 +1,15 @@
 <?php
-/*
- * Plugin Name: MDC YouTube Downloader
- * Plugin URI: http://wordpress.org/plugins/mdc-youtube-downloader/
- * Description: MDC YouTube Downloader allows visitors to download YouTube videos directly from your WordPress site.
- * Author: Nazmul Ahsan
- * Version: 1.0.0
- * Author URI: http://mukto.medhabi.com
- * Stable tag: 1.0.0
- * License: GPL2+
- * Text Domain: MedhabiDotCom
- */
+/****
+	* Plugin Name: MDC YouTube Downloader
+	* Plugin URI: http://wordpress.org/plugins/mdc-youtube-downloader/
+	* Description: MDC YouTube Downloader allows visitors to download YouTube videos directly from your WordPress site.
+	* Author: Nazmul Ahsan
+	* Version: 1.0.0
+	* Author URI: http://mukto.medhabi.com
+	* Stable tag: 1.0.0
+	* License: GPL2+
+	* Text Domain: MedhabiDotCom
+****/
 function mdc_add_stylesheet() {
 	if(!get_option('mdc_custom_css')){
 		wp_enqueue_style( 'mdc_youtube_downloader_style', plugins_url('css/style.css', __FILE__) );
@@ -43,7 +43,7 @@ function mdc_youtube_downloader(){?>
 	$found_id = $_REQUEST['videoid'];
 	}
 	
-include_once('curl.php');
+include_once('includes/curl.php');
 
 if(isset($_REQUEST['videoid'])) {
 	$my_id = $found_id;
