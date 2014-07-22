@@ -27,4 +27,5 @@ It enables a shortcode `[mdc_youtube_downloader]`, which can be added anywhere o
 == Screenshots ==
 
 1. Configure page
-2. Download page with different video formats
+2. Shortcode in a page a post
+3. Download page with different video formats
