@@ -144,7 +144,7 @@ if ($my_type == 'Download') {
 	$format = $format[1];
 	?>
 		<li>
-			<?php echo ucfirst($format); if(get_option('mdc_show_quality')){?> (Quality: <?php echo ucfirst($avail_formats[$i]['quality']);?>) <?php }?> - <a href="<?php echo $avail_formats[$i]['url']; ?>" class="mime"><?php if(get_option('mdc_download_text')) {echo get_option('mdc_download_text');} else{ echo "Download";}?></a>
+			<?php echo ucfirst($format); if(get_option('mdc_show_quality')){?> (Quality: <?php echo ucfirst($avail_formats[$i]['quality']);?>) <?php }?> - <a href="<?php echo $avail_formats[$i]['url']; ?>" target="_blank" class="mime"><?php if(get_option('mdc_download_text')) {echo get_option('mdc_download_text');} else{ echo "Download";}?></a>
 		</li>
 	<?php }
 	echo '</ul></div>';
