@@ -4,9 +4,9 @@
 	* Plugin URI: http://wordpress.org/plugins/mdc-youtube-downloader/
 	* Description: MDC YouTube Downloader allows visitors to download YouTube videos directly from your WordPress site.
 	* Author: Nazmul Ahsan
-	* Version: 1.2.0
+	* Version: 1.2.1
 	* Author URI: http://mukto.medhabi.com
-	* Stable tag: 1.2.0
+	* Stable tag: 1.2.1
 	* License: GPL2+
 	* Text Domain: MedhabiDotCom
 ****/

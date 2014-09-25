@@ -62,6 +62,7 @@ function mdc_youtube_downloader_options(){
 				</tr>
 			</tbody>
 		</table>
+		<p style="font-style: italic">Tips: Create a new page/post and use shortcode <strong>[mdc_youtube_downloader]</strong>.<br />This will generate YouTube downloader form. Copy a URL of any YouTube video, paste it in the form and click Download. You'll then get a list of available video formats.</p>
 		<p class="submit">
 			<input type="submit" value="Save Changes" class="button button-primary" id="submit" name="submit">
 		</p>
