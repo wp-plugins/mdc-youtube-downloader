@@ -1,6 +1,6 @@
 <?php 
 function mdc_option_page(){
-	add_menu_page('MDC YouTube Downloader', 'YT Downloader', 'administrator', 'mdc-youtube-downloader', 'mdc_youtube_downloader_options', plugins_url( 'images/icon.png' , __FILE__ ), 61);
+	add_menu_page('MDC YouTube Downloader', 'YT Downloader', 'administrator', 'mdc-youtube-downloader', 'mdc_youtube_downloader_options', plugins_url( 'images/icon.png' , __FILE__ ), 61.25);
 	// add_submenu_page('mdc-theme-switcher', 'MedhabiDotCom', 'MedhabiDotCom', 'administrator', 'medhabidotcom', 'medhabidotcom', '');
 }
 add_action('admin_menu', 'mdc_option_page');
