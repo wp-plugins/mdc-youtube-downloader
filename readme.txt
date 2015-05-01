@@ -1,5 +1,5 @@
 === MDC YouTube Downloader ===
-Contributors: mukto90
+Contributors: mukto90, medhabidotcom
 Donate link: http://mukto.medhabi.com/
 Tags: download youtube video, downloader, video download, video downloader, youtube, youtube download, Youtube-video, mdc
 Version: 1.2.1
