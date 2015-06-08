@@ -1,11 +1,11 @@
 === MDC YouTube Downloader ===
 Contributors: mukto90, medhabidotcom
-Donate link: http://mukto.medhabi.com/
+Donate link: http://nazmulahsan.me/
 Tags: download youtube video, downloader, video download, video downloader, youtube, youtube download, Youtube-video, mdc
-Version: 1.2.2
+Version: 2.0.0
 Requires at least: 3.0.1
-Tested up to: 4.1
-Stable tag: 1.2.2
+Tested up to: 4.2
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ MDC YouTube Downloader allows visitors to download YouTube videos directly from 
 
 MDC YouTube Downloader allows visitors to download YouTube videos directly from your WordPress site.
 
-It enables a shortcode `[mdc_youtube_downloader]`, which can be added anywhere of the WordPress. In a post, page or widget. Even in template files!
+It enables a shortcode `[mdc_youtube_downloader]`, that can be added anywhere of the WordPress. In a post, page or widget. Even in template files!
 
 == Installation ==
 
@@ -29,3 +29,6 @@ It enables a shortcode `[mdc_youtube_downloader]`, which can be added anywhere o
 1. Configure page
 2. Shortcode in a page a post
 3. Download page with different video formats
+
+== Pro Version ==
+MDC YouTube Downloader Pro comes with the awesome feature to download videos from Posts and/or pages!
