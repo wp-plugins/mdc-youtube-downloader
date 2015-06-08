@@ -32,3 +32,4 @@ It enables a shortcode `[youtube_downloader_form]`, that can be added anywhere o
 
 == Pro Version ==
 MDC YouTube Downloader Pro comes with the awesome feature to download videos from Posts and/or pages!
+Click here to get this magic tool: http://medhabi.com/items/mdc-youtube-downloader/
