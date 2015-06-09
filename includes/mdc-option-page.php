@@ -31,7 +31,7 @@ class MDC_option_page{
 									<div class="mdc_yt_dl_pro">
 										<h3 class="mdc_yt_dl_pro_ttl">WANT TO DOWNLOAD VIDEOS FROM POSTS AND PAGES?</h3>
 										<div class="pro_logo">
-											<a href="http://medhabi.com/items/mdc-youtube-downloader/" target="_blank"><img src="<?php echo plugins_url('../images/pro-logo.png', __FILE__);?>"></a>
+											<a href="#" target="_blank"><img src="<?php echo plugins_url('../images/pro-logo.png', __FILE__);?>"></a>
 										</div>
 										<h3 class="upgrade_today">UPGRADE TO PREMIUM TODAY</h3>
 										<!-- <div class="pro_feature">
@@ -42,7 +42,7 @@ class MDC_option_page{
 											</ul>
 										</div> -->
 										<div class="get_pro_div">
-											<a href="http://medhabi.com/items/mdc-youtube-downloader/" target="_blank"><button class="get_pro_btn">Get Premium</button></a>
+											<a href="#" target="_blank"><button class="get_pro_btn">Get Premium</button></a>
 											<hr />
 											<a href="http://www.medhabi.com/" target="_blank"><img alt="MedhabiDotCom - One Stop Tech Solution" class="mdc_logo" src="http://www.medhabi.com/wp-content/uploads/2014/12/medhabidotcom.png">
 											<i>www.medhabi.com</i></a>
