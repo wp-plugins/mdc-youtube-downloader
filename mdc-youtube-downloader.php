@@ -4,9 +4,9 @@
 	* Plugin URI: http://wordpress.org/plugins/mdc-youtube-downloader/
 	* Description: MDC YouTube Downloader allows visitors to download YouTube videos directly from your WordPress site.
 	* Author: Nazmul Ahsan
-	* Version: 2.0.0
+	* Version: 2.0.1
 	* Author URI: http://nazmulahsan.me
-	* Stable tag: 2.0.0
+	* Stable tag: 2.0.1
 	* License: GPL2+
 	* Text Domain: MedhabiDotCom
 ****/
@@ -35,9 +35,11 @@ class MDC_YouTube_Downloader{
 	}
 
 	public function mdc_youtube_downloader(){
+		$placeholder = (get_option('mdc_form_placeholder_text') == '') ? "Video ID or URL" : get_option('mdc_form_placeholder_text');
+		$gener = (get_option('mdc_form_button_text') == '') ? "Generate Download Links" : get_option('mdc_form_button_text');
 		$output = '<form class="form-download" method="post" id="download" action="">
-			<input required type="text" name="videoid" id="videoid" size="40" placeholder="Video ID or URL" />
-			<input class="btn btn-primary" type="submit" name="type" id="type" value="Download" />
+			<input required type="text" name="videoid" id="videoid" size="40" placeholder="'.$placeholder.'" />
+			<input class="btn btn-primary" type="submit" name="type" id="type" value="'.$gener.'" />
 		</form>
 		<br />
 		<div class="mdc_video_div">';
@@ -131,7 +133,7 @@ class MDC_YouTube_Downloader{
 					$i++;
 				}
 
-				if ($my_type == 'Download') {
+				if ($my_type == get_option('mdc_form_button_text') || $my_type == "Generate Download Links") {
 					$output .= '<div class="mdc_floatright">
 						<p class="mdc_video_title">'.$video_title.'</p>
 						<ul class="mdc_videos_list">';
@@ -192,7 +194,7 @@ class MDC_YouTube_Downloader{
 							}
 						break;
 					}
-				} // end of else for type not being Download
+				} // end of else for type not being Generate
 			}//if $found_id = 11
 			else{
 				$output .= 'Invalid Video ID or URL';

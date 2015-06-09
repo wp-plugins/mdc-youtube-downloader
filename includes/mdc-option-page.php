@@ -31,7 +31,7 @@ class MDC_option_page{
 									<div class="mdc_yt_dl_pro">
 										<h3 class="mdc_yt_dl_pro_ttl">WANT TO DOWNLOAD VIDEOS FROM POSTS AND PAGES?</h3>
 										<div class="pro_logo">
-											<a href="#" target="_blank"><img src="<?php echo plugins_url('../images/pro-logo.png', __FILE__);?>"></a>
+											<a href="http://medhabi.com/items/mdc-youtube-downloader-pro/" target="_blank"><img src="<?php echo plugins_url('../images/pro-logo.png', __FILE__);?>"></a>
 										</div>
 										<h3 class="upgrade_today">UPGRADE TO PREMIUM TODAY</h3>
 										<!-- <div class="pro_feature">
@@ -42,7 +42,7 @@ class MDC_option_page{
 											</ul>
 										</div> -->
 										<div class="get_pro_div">
-											<a href="#" target="_blank"><button class="get_pro_btn">Get Premium</button></a>
+											<a href="http://medhabi.com/items/mdc-youtube-downloader-pro/" target="_blank"><button class="get_pro_btn">Get Premium</button></a>
 											<hr />
 											<a href="http://www.medhabi.com/" target="_blank"><img alt="MedhabiDotCom - One Stop Tech Solution" class="mdc_logo" src="http://www.medhabi.com/wp-content/uploads/2014/12/medhabidotcom.png">
 											<i>www.medhabi.com</i></a>
@@ -52,6 +52,8 @@ class MDC_option_page{
 
 								<div class="option_page_left">
 									<?php if($_POST){
+										update_option('mdc_form_button_text', $_POST['mdc_form_button_text']);
+										update_option('mdc_form_placeholder_text', $_POST['mdc_form_placeholder_text']);
 										update_option('mdc_download_text', $_POST['mdc_download_text']);
 										update_option('mdc_show_thumbnail', $_POST['mdc_show_thumbnail']);
 										update_option('mdc_show_quality', $_POST['mdc_show_quality']);
@@ -66,6 +68,14 @@ class MDC_option_page{
 									<form action="" method="post">
 										<table class="form-table">
 											<tbody>
+												<tr valign="top">
+													<th scope="row"><label for="mdc_form_button_text">Generate Button Text</label></th>
+													<td><input type="text" class="regular-text" value="<?php echo get_option('mdc_form_button_text');?>" id="mdc_form_button_text" name="mdc_form_button_text" placeholder="Example: Generate Download Links" /><span class="mdc_help_icon dashicons dashicons-editor-help" title="Help?"></span><br /><small class="hidden mdc_help">(Button texts to be used in downloader form.)</small></td>
+												</tr>
+												<tr valign="top">
+													<th scope="row"><label for="mdc_form_placeholder_text">Form Placeholder Text</label></th>
+													<td><input type="text" class="regular-text" value="<?php echo get_option('mdc_form_placeholder_text');?>" id="mdc_form_placeholder_text" name="mdc_form_placeholder_text" placeholder="Example: Input Video ID or URL" /><span class="mdc_help_icon dashicons dashicons-editor-help" title="Help?"></span><br /><small class="hidden mdc_help">(Button texts to be used in downloader form.)</small></td>
+												</tr>
 												<tr valign="top">
 													<th scope="row"><label for="mdc_download_text">Download Text</label></th>
 													<td><input type="text" class="regular-text" value="<?php echo get_option('mdc_download_text');?>" id="mdc_download_text" name="mdc_download_text" placeholder="Example: Download Video" /><span class="mdc_help_icon dashicons dashicons-editor-help" title="Help?"></span><br /><small class="hidden mdc_help">(Text label to be clicked to download a video, when links are generated.)</small></td>
