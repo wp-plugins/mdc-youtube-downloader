@@ -17,7 +17,7 @@ MDC YouTube Downloader allows visitors to download YouTube videos directly from 
 
 This Plugin comes with a shortcode, `[youtube_downloader_form]`. You can use YouTube icon to generate shortcode in TinyMCE editor.
 
-`[youtube_downloader_form]` generates a form. Copy a URL of any YouTube video, paste it in the form and click Download. You'll then get a list of download links of available video formats.
+The shortcode `[youtube_downloader_form]` generates a form. Copy a URL of any YouTube video, paste it in the form and click Download. You'll then get a list of download links of available video formats.
 
 == Installation ==
 
