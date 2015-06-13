@@ -31,7 +31,7 @@ This Plugin comes with a shortcode, `[youtube_downloader_form]`. You can use You
 1. Configure page
 2. Shortcode generator icon in TinyMCE editor.
 3. Shortcode generator with multple parameters.
-3. Download page with different video formats
+4. Download page with different video formats
 
 == Changelog ==
 
