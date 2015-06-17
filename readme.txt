@@ -19,6 +19,9 @@ This Plugin comes with a shortcode, `[youtube_downloader_form]`. You can use You
 
 The shortcode `[youtube_downloader_form]` generates a form. Copy a URL of any YouTube video, paste it in the form and click Download. You'll then get a list of download links of available video formats.
 
+= Video =
+https://www.youtube.com/watch?v=-m1o4Y05NoY
+
 = Demo =
 Link: http://medhabi.com/items/mdc-youtube-downloader-pro/
 
